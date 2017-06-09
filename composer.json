@@ -12,7 +12,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Scootersam\\GemPayment\\": "src/"
+      "GemPayment\\": "src/"
     }
   },
   "require": {}
