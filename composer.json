@@ -3,11 +3,17 @@
   "description": "PHP SDK for GemPayment, process subscriptions with Stripe and PayPal easily.",
   "type": "package",
   "license": "MIT",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Sam Parton",
       "email": "sam@equalmediatv.net"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "Scootersam\\GemPayment\\": ""
+    }
+  },
   "require": {}
 }
