@@ -1,0 +1,13 @@
+{
+  "name": "scootersam/gem-payment-sdk",
+  "description": "PHP SDK for GemPayment, process subscriptions with Stripe and PayPal easily.",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sam Parton",
+      "email": "sam@equalmediatv.net"
+    }
+  ],
+  "require": {}
+}
