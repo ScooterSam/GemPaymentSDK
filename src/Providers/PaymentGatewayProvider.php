@@ -23,6 +23,6 @@ class PaymentGatewayProvider extends ServiceProvider
 	 */
 	public function register()
 	{
-		//
+
 	}
 }
