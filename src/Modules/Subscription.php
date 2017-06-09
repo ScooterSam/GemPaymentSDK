@@ -6,11 +6,11 @@
  * Time: 17:20
  */
 
-namespace ScooterSam\GemPayment\Modules;
+namespace GemPayment\Modules;
 
 
-use ScooterSam\GemPayment\PaymentGateway;
-use ScooterSam\GemPayment\Support\Http;
+use GemPayment\PaymentGateway;
+use GemPayment\Support\Http;
 
 class Subscription
 {
@@ -45,7 +45,7 @@ class Subscription
 	 * @param bool $includeProduct
 	 * @param bool $includeProductCounts
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 * @internal param bool $subscriptionsAndPayments
 	 *
 	 */
@@ -64,7 +64,7 @@ class Subscription
 	 * @param      $perPage
 	 *
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 */
 	public function list($page, $perPage, $status = 'active')
 	{

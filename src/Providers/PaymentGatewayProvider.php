@@ -1,6 +1,6 @@
 <?php
 
-namespace ScooterSam\GemPayment\Providers;
+namespace GemPayment\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

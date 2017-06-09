@@ -6,11 +6,11 @@
  * Time: 17:20
  */
 
-namespace ScooterSam\GemPayment\Modules;
+namespace GemPayment\Modules;
 
 
-use ScooterSam\GemPayment\PaymentGateway;
-use ScooterSam\GemPayment\Support\Http;
+use GemPayment\PaymentGateway;
+use GemPayment\Support\Http;
 
 class Customer
 {
@@ -54,7 +54,7 @@ class Customer
 	 *
 	 * @param $email
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse|bool
+	 * @return \GemPayment\Support\HttpResponse|bool
 	 */
 	public function exists($email)
 	{
@@ -84,7 +84,7 @@ class Customer
 	/**
 	 * Create the stripe customer instance for the customer
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 */
 	public function createStripe()
 	{
@@ -97,7 +97,7 @@ class Customer
 	 *
 	 * @param $source
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 */
 	public function assignStripeSource($source)
 	{
@@ -110,7 +110,7 @@ class Customer
 	 * @param bool $includeProduct
 	 * @param bool $includeProductCounts
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 */
 	public function subscriptions($includeProduct = false, $includeProductCounts = false)
 	{
@@ -125,7 +125,7 @@ class Customer
 	 *
 	 * @param $subscriptionId
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 */
 	public function subscriptionPayments($subscriptionId)
 	{

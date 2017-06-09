@@ -1,10 +1,10 @@
 <?php
 
-namespace ScooterSam\GemPayment\Support;
+namespace GemPayment\Support;
 
+use GemPayment\PaymentGateway;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
-use ScooterSam\GemPayment\PaymentGateway;
 
 class Http
 {

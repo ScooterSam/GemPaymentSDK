@@ -6,7 +6,7 @@
  * Time: 17:23
  */
 
-namespace ScooterSam\GemPayment\Support;
+namespace GemPayment\Support;
 
 
 use Illuminate\Support\Collection;

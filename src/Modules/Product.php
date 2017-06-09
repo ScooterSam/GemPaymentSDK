@@ -6,11 +6,11 @@
  * Time: 17:20
  */
 
-namespace ScooterSam\GemPayment\Modules;
+namespace GemPayment\Modules;
 
 
-use ScooterSam\GemPayment\PaymentGateway;
-use ScooterSam\GemPayment\Support\Http;
+use GemPayment\PaymentGateway;
+use GemPayment\Support\Http;
 
 class Product
 {
@@ -50,7 +50,7 @@ class Product
 	 * @param int    $billingFreq
 	 * @param array  $meta
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 * @internal param array $data
 	 */
 	public function create($title = '', $description = '', $price = 2.00, $billingPeriod = 'Month', $billingFreq = 1, $meta = [])
@@ -73,7 +73,7 @@ class Product
 	 *
 	 * @param bool $subscriptionsAndPayments
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 */
 	public function get($subscriptionsAndPayments = false)
 	{
@@ -90,7 +90,7 @@ class Product
 	 *
 	 * @param bool $subscriptionsAndPayments | Allows you to include subscriptions and payment information in the list.
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 */
 	public function list($page, $perPage, $subscriptionsAndPayments = false)
 	{
@@ -107,7 +107,7 @@ class Product
 	 *
 	 * @param bool $subscriptionsAndPayments
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 */
 	public function all($subscriptionsAndPayments = false)
 	{
@@ -121,7 +121,7 @@ class Product
 	 *
 	 * @param $values
 	 *
-	 * @return \ScooterSam\GemPayment\Support\HttpResponse
+	 * @return \GemPayment\Support\HttpResponse
 	 */
 	public function update($values)
 	{

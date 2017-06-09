@@ -6,16 +6,16 @@
  * Time: 17:07
  */
 
-namespace ScooterSam\GemPayment;
+namespace GemPayment;
 
 
-use ScooterSam\GemPayment\Modules\Company;
-use ScooterSam\GemPayment\Modules\Customer;
-use ScooterSam\GemPayment\Modules\Gateway;
-use ScooterSam\GemPayment\Modules\Payments;
-use ScooterSam\GemPayment\Modules\Product;
-use ScooterSam\GemPayment\Modules\Subscription;
-use ScooterSam\GemPayment\Support\Http;
+use GemPayment\Modules\Company;
+use GemPayment\Modules\Customer;
+use GemPayment\Modules\Gateway;
+use GemPayment\Modules\Payments;
+use GemPayment\Modules\Product;
+use GemPayment\Modules\Subscription;
+use GemPayment\Support\Http;
 
 class PaymentGateway
 {

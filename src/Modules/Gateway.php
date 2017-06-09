@@ -6,11 +6,11 @@
  * Time: 18:54
  */
 
-namespace ScooterSam\GemPayment\Modules;
+namespace GemPayment\Modules;
 
 
-use ScooterSam\GemPayment\PaymentGateway;
-use ScooterSam\GemPayment\Support\Http;
+use GemPayment\PaymentGateway;
+use GemPayment\Support\Http;
 
 class Gateway
 {
