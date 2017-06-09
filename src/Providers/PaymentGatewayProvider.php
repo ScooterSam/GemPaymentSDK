@@ -2,6 +2,7 @@
 
 namespace GemPayment\Providers;
 
+use GemPayment\PaymentGateway;
 use Illuminate\Support\ServiceProvider;
 
 class PaymentGatewayProvider extends ServiceProvider
@@ -13,7 +14,9 @@ class PaymentGatewayProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		//
+		\App::bind('twitter', function () {
+			return new PaymentGateway();
+		});
 	}
 
 	/**
